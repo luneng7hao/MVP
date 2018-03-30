@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.mvp"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:multidex:'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    //引入RecyclerView
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+
+    testCompile 'junit:junit:4.12'
+    //Rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.1.6'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //Retrofit2.0
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile files('libs/commons-codec-1.11.jar')
+    //Xml数据解析
+    compile('com.squareup.retrofit2:converter-simplexml:2.0.1') {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    //状态栏、导航栏颜色设置
+    compile 'org.zackratos:ultimatebar:1.1.1'
+
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    //SwipeRecyclerView依赖 实现了侧滑功能
+    compile 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+    //BottomNavigationBar 底部导航栏
+    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.4'
+    //广告轮播banner
+    compile 'com.youth.banner:banner:1.4.9'
+    //Glide图片加载库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //multicard抽屉组件用到的库
+    compile 'com.nineoldandroids:library:2.4.0+'
+    //旋转视图
+    compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    //OKHttp3
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+  //线形图
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //开源工具类AndroidUtilCode
+    compile 'com.blankj:utilcode:1.13.2'
+    compile project(path: ':beautifulrefreshlibrary')
+    //ZLoading 加载动画控件集合
+    compile 'com.zyao89:zloading:1.0.11'
+}

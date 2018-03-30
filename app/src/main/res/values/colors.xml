@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <!--POP 窗的字体-->
+    <color name="pop_orgclass">#6b6b6b</color>
+    <color name="pop_close">#756141</color>
+    <color name="pop_view">#f5f5f5</color>
+    <color name="pop_orgitem">#171717</color>
+    <color name="title_color">#08a6e0</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!--MD_dialog相关-->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <!--MD_dialog相关-->
+
+    <color name="gray_c">#cccccc</color>
+    <color name="gray_e">#eeeeee</color>
+    <color name="gray_9">#999999</color>
+    <color name="black">#000000</color>
+    <color name="black_3_d9">#D9333333</color>
+    <color name="black_4d">#4d4d4d</color>
+    <color name="orange">#fa723c</color>
+    <color name="green">#7CD237</color>
+
+
+    <color name="theme_blue">#6495ED</color>
+    <color name="theme_blue_status_bar">#6CA6CD</color>
+
+    <!-- activity_home 相关颜色-->
+
+    <!-- 抽屉视图相关-->
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="title_bar_text">#ffffff</color>
+    <!-- 单个抽屉标签背景色-->
+    <color name="multicard_item_bg">#08a6e0</color>
+    <!-- 抽屉背景色-->
+    <color name="multicard_bg">#fefccc</color>
+
+    <!-- 抽屉一相关-->
+    <color name="multicard_item01_text_color">#000000</color>
+    <color name="multicard_item01_bg">#FBF5E7</color>
+    <!-- 抽屉一相关-->
+    <color name="multicard_item02_text_color">#BABABA</color>
+    <color name="multicard_item02_text_bg">#000000</color>
+    <color name="multicard_item02_bg">#3C3F41</color>
+
+</resources>

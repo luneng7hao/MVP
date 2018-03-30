@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MVP</string>
+
+    <!--UI text-->
+    <!--activity_main-->
+    <string name="testBtn">测试</string>
+    <string name="testPop">弹窗（右侧）</string>
+
+    <string name="douban_movie">豆瓣电影</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="collect">收藏(%s)</string>
+
+    <string name="no_found_network">无网络连接</string>
+    <string name="loading">正在加载...</string>
+    <string name="loadFail">加载不出数据</string>
+    <string name="loadFail_net">网络不给力</string>
+    <string name="loadFail_reload">点击屏幕重试</string>
+    <string name="no_data">啥都没有</string>
+    <string name="load_all_finish">全部加载完毕</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+</resources>

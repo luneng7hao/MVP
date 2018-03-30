@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/line_chart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="一、03月22日济南市24小时温度图"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/line_chart_text"></com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/line_chart_text02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_chart"
+                android:layout_margin="15dp"
+                android:text="二、2018年每月收益图"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/line_chart02"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/line_chart_text02"></com.github.mikephil.charting.charts.LineChart>
+            <TextView
+                android:id="@+id/bar_chart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_chart02"
+                android:layout_margin="15dp"
+                android:text="三、2017年各省人均消费收益柱状图"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_hart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/bar_chart_text"
+                />
+            <TextView
+                android:id="@+id/combined_chart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bar_hart"
+                android:layout_margin="15dp"
+                android:text="四、线性图+柱形图"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/combined_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/combined_chart_text"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

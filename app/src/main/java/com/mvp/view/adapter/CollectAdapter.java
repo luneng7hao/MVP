@@ -1,0 +1,8 @@
+package com.mvp.view.adapter;
+
+/**
+ * Created by Asion on 2018/1/23.
+ */
+
+public class CollectAdapter {
+}
